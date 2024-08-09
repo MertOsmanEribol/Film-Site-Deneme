@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    font-family: "Electrolize", sans-serif;
+  
+}
+
+body{
+    background-color: black;
+}
+/* Navbar start */
+
+.nav{
+height: 60px;
+background-color: black;
+color: white;
+position: sticky;
+top: 0;
+}
+.navbar-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 5px;
+}
+
+.logo{
+    color: red;
+    font-size: 40px;
+    padding-left: 70px;
+    cursor: pointer;
+}
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+font-size: 20px;
+
+}
+
+.navbar-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    
+}
+.navbar-profile img{
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.navbar-hesabım i{
+    cursor: pointer;
+    
+}
+.icon-container{
+    background-color: white;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30%;
+    margin-right: 30px;
+    position: relative;
+    
+
+}
+
+.toggle{
+    color:black;
+    font-size: 20px;
+position: absolute;
+margin-left: 21px;
+cursor: pointer;
+
+    
+}
+
+/* Navbar end */
+/* sidebar start*/
+.sidebar{
+    width: 70px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;position: fixed;
+    
+}
+.sidebar .side-icon{
+    position: sticky;
+    cursor: pointer;
+}
+/* sidebar end*/
+/* content start*/
+.content-wrapper{
+    margin-left: 70px;
+}
+.first-content{
+    height: 100vh;
+    background-image: url(spiderman.jpg);
+    padding: 50px 30px;
+    background-size: cover;
+    
+}
+.content-title{
+    height: 250px;
+}
+.content-p{
+    
+    width: 500px;
+    padding-left: 100px; 
+    background-color: rgba(255, 255, 255, 0.521);
+    margin-top: 50px;
+    
+}
+.content-p p{
+    text-align: center;
+    color: black;
+    font-size:20px;
+    
+}
+.content-buttons{
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    column-gap: 30px;
+  
+}
+.content-icon{
+   color: black;
+}
+.content-button1{
+    background-color: white;
+    color: black;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 10%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 15px;
+   cursor: pointer;
+}
+.content-button1 span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.content-button1 i{
+    font-size: 20px;
+}
+.content-button2{
+    background-color: rgba(177, 168, 168, 0.329);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;   
+}
+.content-button2 span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.content-button2 i{
+    font-size: 20px;
+    color: white;
+}
+/* content end*/
+
+.content-select{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 150px;
+   border: none;
+    margin-bottom: 20px;
+    
+}
+.content-select option{
+    border: none;
+}
+.list-image{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+
+.content-list-wrapper:hover .list-image{
+    opacity: 0.5;
+    object-fit:cover;
+}
+
+.content-container{
+    padding-top: 15px;
+}
+.content-list-wrapper{
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s all ease-in;
+
+}
+.content-list-wrapper:hover{
+    transform: scale(1.2);
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.content-list-wrapper:hover .content-info{
+opacity: 1;
+
+}
+
+.content-list{
+    margin-top: 20px;
+display: flex;
+column-gap: 30px;
+overflow: hidden;
+}
+.content-info{
+    color: white;
+    position: absolute;
+  top: 0 ;
+  opacity: 0;
+  transition: 0.5 all ease-in-out;
+}
+.content-info span{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(80, 76, 76, 0.493);
+   margin-left: 80px;
+   margin-top: 50px;
+   position: absolute;
+   
+}
+
+.movie-item-button{
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 70px;
+    display: flex;
+    column-gap: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.151);
+    position: absolute;
+  
+}
